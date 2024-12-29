@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота в Чехії</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-lang="uk">Робота в Чехії</h1>
+        <h1 data-lang="en" style="display: none;">Work in Czechia</h1>
+        <h1 data-lang="cs" style="display: none;">Práce v Česku</h1>
+        <p id="welcome-text" data-lang="uk">Знайдіть роботу своєї мрії! Виберіть вакансію нижче.</p>
+        <p id="welcome-text" data-lang="en" style="display: none;">Find your dream job! Choose a vacancy below.</p>
+        <p id="welcome-text" data-lang="cs" style="display: none;">Najděte si svou vysněnou práci! Vyberte si níže.</p>
+        <div class="language-switcher">
+            <button onclick="setLanguage('uk')">🇺🇦 Українська</button>
+            <button onclick="setLanguage('en')">🇬🇧 English</button>
+            <button onclick="setLanguage('cs')">🇨🇿 Čeština</button>
+        </div>
+    </header>
+    <div class="content">
+        <!-- Вакансії -->
+        <div class="job-listing">
+            <img src="images/loader.webp" alt="Склад електроніки">
+            <h3 data-lang="uk">Склад електроніки</h3>
+            <h3 data-lang="en" style="display: none;">Electronics Warehouse</h3>
+            <h3 data-lang="cs" style="display: none;">Sklad elektroniky</h3>
+            <p data-lang="uk"><strong>Місто:</strong> Прага</p>
+            <p data-lang="en" style="display: none;"><strong>City:</strong> Prague</p>
+            <p data-lang="cs" style="display: none;"><strong>Město:</strong> Praha</p>
+            <p><strong>Заробітна плата:</strong> 1000 євро/місяць</p>
+            <button class="apply-button" onclick="location.href='form.html?vacancy=Склад електроніки'">Відгукнутися</button>
+        </div>
+
+        <div class="job-listing">
+            <img src="images/packager.webp" alt="Склад одягу">
+            <h3 data-lang="uk">Склад одягу</h3>
+            <h3 data-lang="en" style="display: none;">Clothing Warehouse</h3>
+            <h3 data-lang="cs" style="display: none;">Sklad oděvů</h3>
+            <p data-lang="uk"><strong>Місто:</strong> Брно</p>
+            <p data-lang="en" style="display: none;"><strong>City:</strong> Brno</p>
+            <p data-lang="cs" style="display: none;"><strong>Město:</strong> Brno</p>
+            <p><strong>Заробітна плата:</strong> 900 євро/місяць</p>
+            <button class="apply-button" onclick="location.href='form.html?vacancy=Склад одягу'">Відгукнутися</button>
+        </div>
+
+        <div class="job-listing">
+            <img src="images/cook.webp" alt="Кухар">
+            <h3 data-lang="uk">Кухар</h3>
+            <h3 data-lang="en" style="display: none;">Cook</h3>
+            <h3 data-lang="cs" style="display: none;">Kuchař</h3>
+            <p data-lang="uk"><strong>Місто:</strong> Плзень</p>
+            <p data-lang="en" style="display: none;"><strong>City:</strong> Pilsen</p>
+            <p data-lang="cs" style="display: none;"><strong>Město:</strong> Plzeň</p>
+            <p><strong>Заробітна плата:</strong> 850 євро/місяць</p>
+            <button class="apply-button" onclick="location.href='form.html?vacancy=Кухар'">Відгукнутися</button>
+        </div>
+
+        <div class="job-listing">
+            <img src="images/cleaner.webp" alt="Прибиральник">
+            <h3 data-lang="uk">Прибиральник</h3>
+            <h3 data-lang="en" style="display: none;">Cleaner</h3>
+            <h3 data-lang="cs" style="display: none;">Uklízeč</h3>
+            <p data-lang="uk"><strong>Місто:</strong> Брно</p>
+            <p data-lang="en" style="display: none;"><strong>City:</strong> Brno</p>
+            <p data-lang="cs" style="display: none;"><strong>Město:</strong> Brno</p>
+            <p><strong>Заробітна плата:</strong> 800 євро/місяць</p>
+            <button class="apply-button" onclick="location.href='form.html?vacancy=Прибиральник'">Відгукнутися</button>
+        </div>
+
+        <div class="job-listing">
+            <img src="images/technician.webp" alt="Технік">
+            <h3 data-lang="uk">Технік</h3>
+            <h3 data-lang="en" style="display: none;">Technician</h3>
+            <h3 data-lang="cs" style="display: none;">Technik</h3>
+            <p data-lang="uk"><strong>Місто:</strong> Чеське Будейовіце</p>
+            <p data-lang="en" style="display: none;"><strong>City:</strong> České Budějovice</p>
+            <p data-lang="cs" style="display: none;"><strong>Město:</strong> České Budějovice</p>
+            <p><strong>Заробітна плата:</strong> 1000 євро/місяць</p>
+            <button class="apply-button" onclick="location.href='form.html?vacancy=Технік'">Відгукнутися</button>
+        </div>
+
+        <div class="job-listing">
+            <img src="images/welder.webp" alt="Зварювальник">
+            <h3 data-lang="uk">Зварювальник</h3>
+            <h3 data-lang="en" style="display: none;">Welder</h3>
+            <h3 data-lang="cs" style="display: none;">Svářeč</h3>
+            <p data-lang="uk"><strong>Місто:</strong> Острава</p>
+            <p data-lang="en" style="display: none;"><strong>City:</strong> Ostrava</p>
+            <p data-lang="cs" style="display: none;"><strong>Město:</strong> Ostrava</p>
+            <p><strong>Заробітна плата:</strong> 1200 євро/місяць</p>
+            <button class="apply-button" onclick="location.href='form.html?vacancy=Зварювальник'">Відгукнутися</button>
+        </div>
+    </div>
+    <footer>
+        <p id="contact-text" data-lang="uk">Контактна інформація:</p>
+        <p id="contact-text" data-lang="en" style="display: none;">Contact Information:</p>
+        <p id="contact-text" data-lang="cs" style="display: none;">Kontaktní informace:</p>
+        <p>+420 123 456 789 | email@example.com</p>
+        <p>Sokolovská 352/215, 190 00 Praha 9</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

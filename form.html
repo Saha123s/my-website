@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на вакансію</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Заявка на вакансію</h1>
+    </header>
+    <div class="content">
+        <form action="https://formspree.io/f/xannjowk" method="POST">
+            <label for="vacancy">Вакансія:</label>
+            <input type="text" id="vacancy" name="vacancy" readonly value="">
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" required min="18" max="65">
+
+            <label for="location">Місце проживання:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="housing">Потреба в житлі:</label>
+            <select id="housing" name="housing">
+                <option value="own">Маю власне житло</option>
+                <option value="need">Потребую житло від роботодавця</option>
+            </select>
+
+            <label for="experience">Досвід роботи:</label>
+            <select id="experience" name="experience">
+                <option value="no_experience">Без досвіду</option>
+                <option value="1-2_years">1-2 роки</option>
+                <option value="3+_years">Більше 3 років</option>
+            </select>
+
+            <label for="languages">Рівень знання мов (виберіть усі, які знаєте):</label>
+            <select id="languages" name="languages" multiple>
+                <option value="ukrainian">Українська</option>
+                <option value="english">Англійська</option>
+                <option value="czech">Чеська</option>
+                <option value="russian">Російська</option>
+            </select>
+
+            <label for="shift_work">Готовність до змінної роботи:</label>
+            <select id="shift_work" name="shift_work">
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+
+            <label for="transport">Чи маєте транспорт для доїзду до роботи?</label>
+            <select id="transport" name="transport">
+                <option value="own_car">Маю власний автомобіль</option>
+                <option value="public_transport">Користуюсь громадським транспортом</option>
+                <option value="need_transport">Потребую транспорт від роботодавця</option>
+            </select>
+
+            <label for="work_abroad">Чи маєте досвід роботи за кордоном?</label>
+            <select id="work_abroad" name="work_abroad">
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+
+            <label for="overtime">Чи готові працювати понаднормово?</label>
+            <select id="overtime" name="overtime">
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+
+            <label for="skills">Основні навички або професійні вміння:</label>
+            <textarea id="skills" name="skills" rows="4" placeholder="Опишіть ваші навички"></textarea>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Додаткові коментарі:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Напишіть додаткову інформацію"></textarea>
+
+            <button type="submit" class="apply-button">Надіслати заявку</button>
+        </form>
+    </div>
+    <footer>
+        <p>Контактна інформація: +420 123 456 789 | email@example.com</p>
+    </footer>
+</body>
+</html>
